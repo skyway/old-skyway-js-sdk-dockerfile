@@ -2,7 +2,8 @@ FROM ubuntu:xenial
 RUN apt-get update && apt-get install -y \
   curl \
   unzip \
-  sudo
+  sudo \
+  xvfb
 
 RUN curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash - && \
   apt-get install -y nodejs
